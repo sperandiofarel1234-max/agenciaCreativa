@@ -1,0 +1,10 @@
+@use 'sass:math';
+
+$cor-primaria: #e74c3c;
+$cor-secundaria: #3498db;
+$cor-texto: #2c3e50;
+$cor-fundo: #f9fbfd;
+$fonte: 'Poppins', sans-serif;
+$espaco: 2rem;
+$espaco-sm: math.div($espaco, 2);
+$radius: 10px;

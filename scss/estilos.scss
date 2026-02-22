@@ -1,0 +1,11 @@
+// scss/estilos.scss
+@use 'variaveis' as *;
+@use 'mixins'    as m;     // ← alias 'm'
+@use 'base';
+@use 'layout';
+@use 'componentes';
+
+.hero {
+  // ...
+  @include m.flex-center;    // ← usa o alias
+}

@@ -1,0 +1,11 @@
+{
+  "name": "agencia-criativa",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "sass --watch scss:css --style=expanded --no-source-map",
+    "build": "sass scss/estilos.scss css/estilos.css --style=compressed --no-source-map"
+  },
+  "devDependencies": {
+    "sass": "^1.97.3"
+  }
+}

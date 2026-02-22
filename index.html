@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agência Criativa Web | Design & Desenvolvimento</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css"/>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <nav class="menu">
+        <div class="menu__logo">Agência Criativa</div>
+        <ul class="menu__list">
+          <li><a href="#servicos" class="menu__link">Serviços</a></li>
+          <li><a href="#portfolio" class="menu__link">Portfólio</a></li>
+          <li><a href="#sobre" class="menu__link">Sobre</a></li>
+          <li><a href="#contato" class="menu__link">Contato</a></li>
+        </ul>
+        <button class="btn btn--primary menu__cta">Fale conosco</button>
+        <button class="menu__toggle" id="menuToggle">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero__title">Criamos o <span>futuro digital</span> da sua marca</h1>
+        <p class="hero__subtitle">Design impactante • Sites rápidos • Estratégias que convertem</p>
+        <div class="hero__actions">
+          <a href="#portfolio" class="btn btn--primary">Ver projetos</a>
+          <a href="#contato" class="btn btn--outline">Orçamento gratuito</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="section servicos">
+      <div class="container">
+        <h2 class="section__title">Nossos Serviços</h2>
+        <div class="grid">
+          <div class="card">
+            <h3 class="card__title">UI/UX Design</h3>
+            <p class="card__text">Interfaces intuitivas e visualmente atraentes que geram engajamento.</p>
+            <a href="#" class="btn btn--primary card__btn">Saiba mais</a>
+          </div>
+          <div class="card">
+            <h3 class="card__title">Desenvolvimento Web</h3>
+            <p class="card__text">Sites modernos, responsivos e otimizados para performance e SEO.</p>
+            <a href="#" class="btn btn--primary card__btn">Saiba mais</a>
+          </div>
+          <div class="card">
+            <h3 class="card__title">Marketing Digital</h3>
+            <p class="card__text">Estratégias completas: SEO, Google Ads, redes sociais e conteúdo.</p>
+            <a href="#" class="btn btn--primary card__btn">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section portfolio">
+      <div class="container">
+        <h2 class="section__title">Portfólio</h2>
+        <div class="grid portfolio__grid">
+          <div class="portfolio__item"><img src="https://picsum.photos/seed/p1/600/400" alt="Projeto 1"></div>
+          <div class="portfolio__item"><img src="https://picsum.photos/seed/p2/600/400" alt="Projeto 2"></div>
+          <div class="portfolio__item"><img src="https://picsum.photos/seed/p3/600/400" alt="Projeto 3"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section contato">
+      <div class="container">
+        <h2 class="section__title">Entre em Contato</h2>
+        <form class="form" id="contactForm">
+          <input type="text" placeholder="Nome completo" required />
+          <input type="email" placeholder="E-mail" required />
+          <textarea placeholder="Descreva seu projeto ou dúvida..." rows="5" required></textarea>
+          <button type="submit" class="btn btn--primary">Enviar mensagem</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Agência Criativa Web. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="javascript.js"></script>
+</body>
+</html>

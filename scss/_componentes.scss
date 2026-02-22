@@ -1,0 +1,97 @@
+@use 'variaveis' as *;
+@use 'mixins' as *;
+
+.section__title {
+  text-align: center;
+  font-size: 2.6rem;
+  color: $cor-primaria;
+  margin-bottom: 3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.btn {
+  &--primary {
+    @include botao;
+    background: $cor-primaria;
+    color: white;
+  }
+  &--outline {
+    @include botao;
+    background: transparent;
+    border: 2px solid $cor-secundaria;
+    color: $cor-secundaria;
+  }
+}
+
+.card {
+  background: white;
+  border-radius: $radius;
+  padding: $espaco;
+  box-shadow: 0 4px 20px rgba(black, 0.08);
+  transition: transform 0.3s;
+
+  &:hover { transform: translateY(-8px); }
+
+  &__title { color: $cor-primaria; font-size: 1.4rem; }
+  &__text  { color: #555; margin-bottom: $espaco; }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 0;
+
+  &__list {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+
+    &--open { display: flex !important; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: white; padding: 1rem; box-shadow: 0 4px 12px rgba(black,0.1); }
+  }
+
+  &__link { font-weight: 500; color: $cor-texto; text-decoration: none; }
+
+  &__toggle { display: none; font-size: 1.8rem; background: none; border: none; cursor: pointer; }
+
+  @media (max-width: 768px) {
+    &__list { display: none; }
+    &__toggle { display: block; }
+  }
+}
+
+.hero__title {
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  margin-bottom: 1.5rem;
+  span { color: $cor-primaria; }
+}
+
+.hero__subtitle { font-size: 1.4rem; max-width: 600px; margin: 0 auto 2.5rem; }
+
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  input, textarea {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: $radius;
+    font-family: $fonte;
+  }
+}
+
+.footer {
+  background: $cor-texto;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 4rem;
+}
